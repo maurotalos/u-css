@@ -1,5 +1,85 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+.trash {
+  color: black;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #7b7b7b;
+}
+
+.page-content {
+  margin: 0 auto;
+  background-color: #d4e1f1;
+  max-width: 1200px;
+  overflow: auto;
+
+}
+
+p {
+  text-align: justify;
+}
+
+img {
+  float: left;
+  margin: 0 15px 5px 0;
+  border: solid 1px #bbb;
+  width: 250px;
+  height: 250px;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  float: left;
+}
+
+a:hover {
+  background-color: #9b9b9b;
+}
+
+.gallery {
+  clear: both;
+  align-content: center;
+}
+
+.columns {
+
+  background-color: #d4e1f1;
+
+}
+
+article.column1 {
+  float: left;
+  width: 45%;
+  background: #d4e1f1;
+}
+
+article.column2 {
+  float: right;
+  width: 45%;
+  background: #d4e1f1;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+li {
+  float: left;
+
 }
