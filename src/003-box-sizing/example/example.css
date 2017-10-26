@@ -20,10 +20,10 @@ section {
 
 article {
   background-color: #E8E8E8;
-  border: 3px solid #73AD21;
-  margin: 10px;
-  max-width: 600px;
-  padding: 10px;
+  border: 5px solid #D24F2E;
+  margin: 15px;
+  max-width: 1000px;
+  padding: 15px;
 }
 
 .content-box {
