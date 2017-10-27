@@ -1,5 +1,125 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+.trash {
+  color: black;
 }
+
+/** container  **/
+.page-content {
+  background-color: #8cd0d2;
+  margin: 0 auto;
+  max-width: 120vh;
+}
+
+/*top section*/
+
+.header {
+  background-color: #C8C8C8;
+  margin: 10px 0;
+}
+
+.header h2 {
+  color: black;
+  display: run-in;
+  font-size: 35px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.header span{
+  float: right;
+}
+
+.nav-bar {
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+a {
+  color: #D24F2E;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+a:hover {
+  background-color: #787878;
+}
+
+/*mid section*/
+
+.mdl-columns {
+  background-color: #C8C8C8;
+  padding: 15px;
+}
+
+.mdl-col-left {
+  display: table-cell;
+  padding: 10px;
+}
+
+.mdl-col-right {
+  display: table-cell;
+  padding: 10px;
+}
+
+/*table with headers*/
+
+.mdl-tbl {
+  border-collapse: collapse;
+  display: table;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.tbl-row {
+  background-color: #cccccc;
+  display: table-row;
+  padding: 10px;
+}
+
+.tbl-header, .tbl-cell {
+  display: table-cell;
+  border:#f0f0f0 3px solid;
+}
+
+.tbl-header p{
+  font-weight:bold;
+}
+
+/*box section*/
+.box{
+  margin: 15px 0;
+}
+
+.box div {
+  border: 3px solid #D24F2E;
+  box-sizing: border-box;
+  display: inline-block;
+  font-weight:bold;
+  height: 60px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 20%;
+  background-color: #eeeeee;
+}
+
+@media (max-width: 800px) {
+  .mdl-columns article {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+}
+
