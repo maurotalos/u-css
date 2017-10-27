@@ -1,5 +1,149 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+.trash {
+  color: black;
 }
+
+.page-content {
+  background-color: #cccccc;
+  border: 3px solid #9b9b9b;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/*header*/
+.header {
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+/*nav bar*/
+.nav-bar {
+  background-color: #dddddd;
+  border: 1px solid #9b9b9b;
+  padding: 10px;
+  text-align: center;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+/*inline-block-center*/
+.inline-block-center {
+  padding: 20px;
+  text-align: center;
+}
+
+.inline-block-center div {
+  background-color: #dddddd;
+  border: 1px solid #9b9b9b;
+  display: inline-block;
+  margin: 5px;
+  padding: 20px;
+  text-align: justify;
+  width: 200px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex-center div {
+  background-color: #dddddd;
+  border: 1px solid #9b9b9b;
+  margin: 5px;
+  padding: 20px;
+  width: 200px;
+}
+
+/*center-text-trick*/
+.center-text-trick {
+  background-color: #dddddd;
+  border: 1px solid #9b9b9b;
+  height: 100px;
+  line-height: 100px;
+  margin: 5px;
+  padding: 20px;
+  white-space: nowrap;
+}
+
+/*vertical-align-trick*/
+.vertical-align-trick {
+  background-color: #dddddd;
+  border: 1px solid #9b9b9b;
+  display: table;
+  height: 100px;
+  margin: 5px;
+  padding: 20px;
+}
+
+.vertical-align-trick p{
+  display: table-cell;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 70%;
+}
+
+/*center-flexbox*/
+.center-flexbox {
+  background-color: #dddddd;
+  border: 1px solid #9b9b9b;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  margin: 5px;
+  text-align: center;
+}
+
+/*Within Container*/
+.Center-Container {
+  background-color: #dddddd;
+  border: 1px solid #9b9b9b;
+  height: 200px;
+  margin: 5px;
+  overflow: auto;
+  position: relative;
+  resize: both;
+}
+
+.Absolute-Center {
+  background-color: #eeeeee;
+  border: 1px solid #9b9b9b;
+  height: 50px;
+  margin-left: calc(10% - 20px);
+  margin-top: -45px;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  top: 50%;
+  width: 80%;
+}
+
+.Absolute-Center-unknown {
+  background-color: #eeeeee;
+  border: 1px solid #9b9b9b;
+  height: 50%;
+  margin: auto;
+  overflow: auto;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+}
+
