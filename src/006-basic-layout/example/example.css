@@ -1,5 +1,67 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+.trash {
+  color: black;
+}
+
+/*Without a wrapper div, with border and negative margin*/
+html {
+  background: white;
+  height: auto;
+}
+
+body {
+  background: white;
+  border: 1px solid #efefef;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.aside-float {
+  background-color: #d8d8d8;
+  float: left;
+  margin-right: -200px;
+  position: relative;
+  width: 200px;
+}
+
+.main-float{
+  margin-left: 200px;
+}
+
+main {
+  background: #cccccc;
+}
+
+header,
+footer {
+  background: #9b9b9b;
+  clear: left;
+  overflow: hidden;
+  zoom: 1;
+}
+
+main,
+aside{
+  padding-bottom: 2em;
+}
+
+nav li, nav p {
+  color: white;
+  display: inline;
+  line-height: 5px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+/*Using flex, flex-direction, and wrapper div*/
+
+.lay-flex .wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.aside-flex{
+  background-color: #d8d8d8;
+  width: 200px;
 }

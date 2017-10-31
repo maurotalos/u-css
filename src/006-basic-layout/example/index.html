@@ -1,40 +1,116 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>006 - Basic Layout</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>006 - Basic Layout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">006 - Basic Layout</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+  <!-- Import App Css file -->
+  <link href="./example.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+      <i class="material-icons">home</i>
+    </a>
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">006 - Basic Layout</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
     </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <!-- Practice Content Goes Here -->
 
-  </body>
+      <h5>1. Without a wrapper div, with border and negative margin</h5>
+
+      <section class="lay-negative-margin">
+        <header>
+          <nav class="nav-header">
+            <ul>
+              <li><p>Home</p></li>
+              <li><p>Section 1</p></li>
+              <li><p>Section 2</p></li>
+            </ul>
+          </nav>
+        </header>
+
+        <aside class="aside-float">
+          <ul>
+            <li>Home</li>
+            <li>Section 1</li>
+            <li>Section 2</li>
+          </ul>
+        </aside>
+
+        <main class="main-float">
+          <p>Lorem ipsum...</p>
+          <p>Lorem ipsum...</p>
+        </main>
+
+        <footer>
+          <nav class="nav-header">
+            <ul>
+              <li><p>contact US</p></li>
+              <li><p>Terms and conditions</p></li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+
+      <h5>2. Using flex, flex-direction, and wrapper div</h5>
+
+      <section class="lay-flex">
+
+        <header>
+          <nav class="nav-header">
+            <ul>
+              <li><p>Home</p></li>
+              <li><p>Section 1</p></li>
+              <li><p>Section 2</p></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="wrapper">
+          <aside class="aside-flex">
+            <ul>
+              <li>Home</li>
+              <li>Section 1</li>
+              <li>Section 2</li>
+            </ul>
+          </aside>
+          <main class="main-flex">
+            <p>Lorem ipsum...</p>
+            <p>Lorem ipsum...</p>
+          </main>
+        </div>
+
+        <footer>
+          <nav class="nav-header">
+            <ul>
+              <li><p>contact US</p></li>
+              <li><p>Terms and conditions</p></li>
+            </ul>
+          </nav>
+        </footer>
+
+      </section>
+
+    </div>
+  </main>
+</div>
+
+</body>
 </html>
