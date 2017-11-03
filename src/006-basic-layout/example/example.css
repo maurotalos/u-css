@@ -4,46 +4,40 @@
   color: black;
 }
 
-/*Without a wrapper div, with border and negative margin*/
 html {
   background: white;
   height: auto;
 }
 
-body {
-  background: white;
-  border: 1px solid #efefef;
-  margin: 20px auto;
+.page-content{
   width: 80%;
+  margin: 0 auto;
+}
+
+
+/*Without a wrapper div, with border and negative margin*/
+.lay-negative-margin, .lay-flex{
+  background-color: #ffd0c4;
 }
 
 .aside-float {
-  background-color: #d8d8d8;
   float: left;
   margin-right: -200px;
   position: relative;
-  width: 200px;
 }
 
 .main-float{
-  margin-left: 200px;
+  border-left: 200px solid #8cd0d2;
+  padding: 20px;
 }
 
-main {
-  background: #cccccc;
-}
 
-header,
+.header-exercise,
 footer {
-  background: #9b9b9b;
+  background: #D24F2E;
   clear: left;
   overflow: hidden;
   zoom: 1;
-}
-
-main,
-aside{
-  padding-bottom: 2em;
 }
 
 nav li, nav p {
@@ -55,13 +49,16 @@ nav li, nav p {
 }
 
 /*Using flex, flex-direction, and wrapper div*/
-
 .lay-flex .wrapper {
   display: flex;
   flex-direction: row;
 }
 
-.aside-flex{
-  background-color: #d8d8d8;
+.aside-float, .aside-flex{
+  background-color: #8cd0d2;
   width: 200px;
+}
+
+.main-flex{
+  padding: 20px;
 }
