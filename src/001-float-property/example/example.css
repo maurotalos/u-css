@@ -8,7 +8,6 @@ html {
 }
 
 .page-content {
-  /*background-color: #E8E8E8;*/
   margin: 0 auto;
   max-width: 1200px;
   overflow: auto;
@@ -18,17 +17,8 @@ p {
   text-align: justify;
 }
 
-img {
-  border: solid 1px #bbb;
-  float: left;
-  height: 250px;
-  margin: 0 15px 5px 0;
-  width: 250px;
-  padding: 10px;
-}
-
 /*upper section*/
-nav, nav ul, nav li{
+nav, nav ul, nav li {
   background-color: #DCDCDC;
   overflow: hidden;
   list-style-type: none;
@@ -40,13 +30,13 @@ nav li {
 
 /*middle section*/
 .columns {
-
   background-color: #C8C8C8;
-
+  overflow: auto;
 }
 
-.columns{
-  overflow: auto;
+.column1 img {
+  width: 350px;
+  height: 350px;
 }
 
 article.column1 {
@@ -87,11 +77,20 @@ a:hover {
 
 /*bottom section*/
 
+img {
+  border: solid 1px #bbb;
+  float: left;
+  height: 250px;
+  margin: 0 15px 5px 0;
+  width: 250px;
+  padding: 10px;
+}
+
 h3 {
   padding: 2%;
 }
 
-.ul-gallery li{
+.ul-gallery li {
   list-style-type: none;
 }
 
