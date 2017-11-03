@@ -62,7 +62,6 @@ a:hover {
 
 .mdl-col-left {
   display: table-cell;
-  /*padding: 10px;*/
 }
 
 .mdl-col-right {
@@ -90,9 +89,11 @@ a:hover {
 .tbl-header, .tbl-cell {
   display: table-cell;
   border:#f0f0f0 3px solid;
+  padding: 10px;
+  vertical-align: middle;
 }
 
-.tbl-header p{
+.tbl-header {
   font-weight:bold;
 }
 
