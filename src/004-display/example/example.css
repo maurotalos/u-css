@@ -6,24 +6,23 @@
 
 /** container  **/
 .page-content {
-  background-color: #8cd0d2;
-  margin: 0 auto;
-  max-width: 120vh;
+  background-color: #E8E8E8;
+  margin: 2% auto;
+  max-width: 80%;
+  color: #7b7b7b;
+  padding: 0;
 }
 
 /*top section*/
 
-.header {
-  background-color: #C8C8C8;
-  margin: 10px 0;
+header{
+  padding: 10px;
 }
 
 .header h2 {
-  color: black;
-  display: run-in;
   font-size: 35px;
   line-height: 30px;
-  margin: 0;
+  /*margin: 0;*/
 }
 
 .header span{
@@ -31,23 +30,24 @@
 }
 
 .nav-bar {
-  background-color: #eeeeee;
-  padding: 10px;
+  background-color: #DCDCDC;
+  padding:10px;
+  margin: 0;
 }
 
-ul {
-  list-style-type: none;
+.nav-bar ul{
+  margin: 0;
+  padding: 10px;
 }
 
 li {
   display: inline;
-  padding: 10px;
+  padding-right: 10px;
 }
 
 a {
-  color: #D24F2E;
   text-decoration: none;
-  font-size: 150%;
+  font-size: 120%;
 }
 
 a:hover {
@@ -57,13 +57,12 @@ a:hover {
 /*mid section*/
 
 .mdl-columns {
-  background-color: #C8C8C8;
   padding: 15px;
 }
 
 .mdl-col-left {
   display: table-cell;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 .mdl-col-right {
@@ -103,7 +102,7 @@ a:hover {
 }
 
 .box div {
-  border: 3px solid #D24F2E;
+  border: 3px solid #73AD21;
   box-sizing: border-box;
   display: inline-block;
   font-weight:bold;
