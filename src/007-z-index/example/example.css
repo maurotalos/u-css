@@ -6,7 +6,7 @@
 
 .page-content {
   position: relative;
-  background-color: #aaaaaa;
+  background-color: rgb(212, 234, 222);
   min-height: 100vh;
   min-width: 100%;
   overflow: auto;
@@ -16,11 +16,11 @@
   background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   bottom: 0;
-  min-height: 110%;
-  position: absolute;
+  min-height: 100vh;
+  position: fixed;
   right: 0;
   width: 30%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sect-blue {
@@ -29,23 +29,24 @@
   margin: 5% 5%;
   min-height: 85%;
   min-width: 85%;
-  opacity: 0.8;
   overflow: auto;
   position: absolute;
-  z-index: 2;
+  top: 0;
+  z-index: 1;
 }
 
 .sect-yellow {
   background-color: #DFE180;
   color: #7b7b7b;
+  margin: 5% 5%;
   min-height: 60%;
-  width: 40%;
-  margin-top: 5%;
+  opacity: 1;
   overflow: auto;
   position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 3;
+  right: 4%;
+  top: 10%;
+  width: 30%;
+  z-index: 4;
 }
 
 .sect-red {
@@ -57,7 +58,6 @@
   width: 50%;
   overflow: auto;
   position: absolute;
-  z-index: 3;
 }
 
 .art-sect-blue {
@@ -78,17 +78,26 @@ p {
 
 /* Responsive skills screens*/
 @media (max-width: 640px) {
-  .sect-red, .sect-yellow, .art-sect-blue, .art-sect-red, .art-sect-yellow {
+  .sect-blue, .sect-red, .art-sect-blue, .art-sect-red, .art-sect-yellow {
     position: relative;
     margin: 0;
     line-height: 1.5;
     padding: 5%;
-    width: 100%;
+    width: 90%;
+    z-index: 4;
   }
 
-  .sect-blue {
-    overflow: auto;
-    min-height: 100%;
+  .sect-yellow {
+    position: relative;
+    margin: 5% 5%;
+    min-height: 60%;
+    width: 90%;
+  }
+
+  .sect-gray {
+    top: 0;
+    bottom: 0;
+    left: 0;
   }
 }
 
