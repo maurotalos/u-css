@@ -2,13 +2,13 @@
 
 /*general styles*/
 html {
-  background-color: #7b7b7b;
+  /*background-color: #7b7b7b;*/
   margin: 0;
   padding: 0;
 }
 
 .page-content {
-  background-color: #d4e1f1;
+  /*background-color: #E8E8E8;*/
   margin: 0 auto;
   max-width: 1200px;
   overflow: auto;
@@ -24,51 +24,60 @@ img {
   height: 250px;
   margin: 0 15px 5px 0;
   width: 250px;
+  padding: 10px;
 }
 
 /*upper section*/
-nav {
-  background-color: #333333;
-  list-style-type: none;
-  margin: 0;
+nav, nav ul, nav li{
+  background-color: #DCDCDC;
   overflow: hidden;
-  padding: 0;
-}
-
-ul {
   list-style-type: none;
-
 }
 
-li {
+nav li {
   float: left;
-
 }
 
 /*middle section*/
 .columns {
 
-  background-color: #d4e1f1;
+  background-color: #C8C8C8;
 
+}
+
+.columns{
+  overflow: auto;
 }
 
 article.column1 {
+  background: #C8C8C8;
   float: left;
-  width: 45%;
-  background: #d4e1f1;
+  padding: 2%;
+  width: 60%;
 }
 
 article.column2 {
+  background: #E8E8E8;
   float: right;
-  width: 45%;
-  background: #d4e1f1;
+  padding: 2%;
+  width: 30%;
+}
+
+.f-search input {
+  border: none;
+  display: block;
+  height: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.f-search p {
+  font-weight: bold;
 }
 
 a {
-  color: white;
   display: block;
-  padding: 16px;
-  text-align: center;
+  padding-right: 16px;
   text-decoration: none;
 }
 
@@ -77,7 +86,18 @@ a:hover {
 }
 
 /*bottom section*/
+
+h3 {
+  padding: 2%;
+}
+
+.ul-gallery li{
+  list-style-type: none;
+}
+
 .gallery {
   clear: both;
+  background-color: #F5F5F5;
+  overflow: auto;
 }
 
