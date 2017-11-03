@@ -1,8 +1,5 @@
-/* Practice Layout */
-
 /*general styles*/
 html {
-  /*background-color: #7b7b7b;*/
   margin: 0;
   padding: 0;
 }
@@ -39,14 +36,14 @@ nav li {
   height: 350px;
 }
 
-article.column1 {
+.column1 {
   background: #C8C8C8;
   float: left;
   padding: 2%;
   width: 60%;
 }
 
-article.column2 {
+.column2 {
   background: #E8E8E8;
   float: right;
   padding: 2%;
