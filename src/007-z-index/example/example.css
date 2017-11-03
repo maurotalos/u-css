@@ -1,5 +1,104 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+.trash {
+  color: black;
+}
+
+.page-content {
+  position: relative;
+  background-color: #aaaaaa;
+  min-height: 100vh;
+  min-width: 100%;
+  overflow: auto;
+}
+
+.sect-gray {
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  bottom: 0;
+  min-height: 110%;
+  position: absolute;
+  right: 0;
+  width: 30%;
+  z-index: 1;
+}
+
+.sect-blue {
+  background-color: #76C4D1;
+  color: white;
+  margin: 5% 5%;
+  min-height: 85%;
+  min-width: 85%;
+  opacity: 0.8;
+  overflow: auto;
+  position: absolute;
+  z-index: 2;
+}
+
+.sect-yellow {
+  background-color: #f0ad4e;
+  color: #7b7b7b;
+  min-height: 60%;
+  width: 40%;
+  margin-top: 5%;
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.sect-red {
+  background-color: #e91e63;
+  color: black;
+  bottom: 0;
+  margin-bottom: 5%;
+  min-height: 50%;
+  width: 50%;
+  overflow: auto;
+  position: absolute;
+  z-index: 3;
+}
+
+.art-sect-blue {
+  max-width: 40%;
+  position: absolute;
+  padding: 5%;
+}
+
+.art-sect-red, .art-sect-yellow {
+  max-width: 90%;
+  position: absolute;
+  padding: 10%;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Responsive skills screens*/
+@media (max-width: 640px) {
+  .sect-red, .sect-yellow, .art-sect-blue, .art-sect-red, .art-sect-yellow {
+    position: relative;
+    margin: 0;
+    line-height: 1.5;
+    padding: 5%;
+    width: 100%;
+  }
+
+  .sect-blue {
+    overflow: auto;
+    min-height: 100%;
+  }
+}
+
+@media (max-height: 640px) {
+  .sect-red, .art-sect-blue, .art-sect-red, .art-sect-yellow {
+    position: relative;
+    padding: 5%;
+  }
+
+  .sect-blue {
+    overflow: auto;
+  }
 }
