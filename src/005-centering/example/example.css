@@ -5,22 +5,27 @@
 }
 
 .page-content {
-  background-color: #cccccc;
+  background-color: #E8E8E8;
   border: 3px solid #9b9b9b;
   margin: 0 auto;
   max-width: 1200px;
   padding: 20px;
+  color: #7b7b7b;
 }
 
 /*header*/
 .header {
-  background-color: #eeeeee;
+  background-color: lightgray;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 0 20px 0;
   padding: 20px;
+  text-align: center;
 }
 
 /*nav bar*/
 .nav-bar {
-  background-color: #dddddd;
+  background-color: lightgray;
   border: 1px solid #9b9b9b;
   padding: 10px;
   text-align: center;
@@ -43,7 +48,7 @@ li {
 }
 
 .inline-block-center div {
-  background-color: #dddddd;
+  background-color: lightgray;
   border: 1px solid #9b9b9b;
   display: inline-block;
   margin: 5px;
@@ -60,7 +65,7 @@ li {
 }
 
 .flex-center div {
-  background-color: #dddddd;
+  background-color: lightgray;
   border: 1px solid #9b9b9b;
   margin: 5px;
   padding: 20px;
@@ -69,7 +74,7 @@ li {
 
 /*center-text-trick*/
 .center-text-trick {
-  background-color: #dddddd;
+  background-color: lightgray;
   border: 1px solid #9b9b9b;
   height: 100px;
   line-height: 100px;
@@ -80,7 +85,7 @@ li {
 
 /*vertical-align-trick*/
 .vertical-align-trick {
-  background-color: #dddddd;
+  background-color: lightgray;
   border: 1px solid #9b9b9b;
   display: table;
   height: 100px;
@@ -88,7 +93,7 @@ li {
   padding: 20px;
 }
 
-.vertical-align-trick p{
+.vertical-align-trick p {
   display: table-cell;
   margin: 0 auto;
   vertical-align: middle;
@@ -97,7 +102,7 @@ li {
 
 /*center-flexbox*/
 .center-flexbox {
-  background-color: #dddddd;
+  background-color: lightgray;
   border: 1px solid #9b9b9b;
   display: flex;
   flex-direction: column;
@@ -105,11 +110,12 @@ li {
   justify-content: center;
   margin: 5px;
   text-align: center;
+  padding: 20px;
 }
 
 /*Within Container*/
 .Center-Container {
-  background-color: #dddddd;
+  background-color: lightgray;
   border: 1px solid #9b9b9b;
   height: 200px;
   margin: 5px;
@@ -119,8 +125,9 @@ li {
 }
 
 .Absolute-Center {
-  background-color: #eeeeee;
+  background-color: darkgray;
   border: 1px solid #9b9b9b;
+  color: white;
   height: 50px;
   margin-left: calc(10% - 20px);
   margin-top: -45px;
@@ -132,8 +139,9 @@ li {
 }
 
 .Absolute-Center-unknown {
-  background-color: #eeeeee;
+  background-color: darkgray;
   border: 1px solid #9b9b9b;
+  color: white;
   height: 50%;
   margin: auto;
   overflow: auto;
