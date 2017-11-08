@@ -1,40 +1,154 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>001 - Float Property</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>008-advanced-selectors</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">001 - Float Property</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+  <!-- Import App Css file -->
+  <link href="./example.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+      <i class="material-icons">home</i>
+    </a>
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">008-advanced-selectors</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
     </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <!-- Practice Content Goes Here -->
+      <header><h4 class="h-border h4-header">CLOTHES</h4></header>
 
-  </body>
+      <section class="mdl-section">
+        <aside class="mdl-column1">
+          <h5 class="h-border">CATEGORIES</h5>
+          <ul class="categories-ul"/>
+          <li><a href="">Blouses and tops</a></li>
+          <li><a href="">Cardigans and kimonos</a></li>
+          <li><a href="">Jackets</a></li>
+          <li><a href="">Crop tops and bralettes</a></li>
+          <li><a href="">Chanel skirt</a></li>
+          <li><a href="">Skirts and shorts</a></li>
+          <li><a href="">New collection</a></li>
+          <li><a href="">Pants</a></li>
+          <li><a href="">Clothes</a></li>
+          <li><a href="">Rumpers</a></li>
+          <li><a href="">Coat</a></li>
+          <li><a href="">Dresses</a></li>
+          <li><a href="">Shoes and accessories</a></li>
+          </ul>
+
+          <h5 class="h-border">CHANGE CURRENCY</h5>
+          <ul class="currency-ul">
+            <li><a href="">COP</a></li>
+            <li><a href="">USD</a></li>
+            <li><a href="">MXN</a></li>
+          </ul>
+
+          <h5 class="h-border">BEST VALORED</h5>
+          <ul>
+            <li class="li-images">
+              <img src="images/avatar1.jpg" alt="">
+              <div>
+                <a>Cross skirt</a>
+                <p>COP $142,000</p>
+              </div>
+            </li>
+            <li class="li-images">
+              <img src="images/avatar2.jpg" alt="">
+              <div>
+                <a>Grape blonda Croptop </a>
+                <p>COP $97,000</p>
+              </div>
+            </li>
+            <li class="li-images">
+              <img src="images/avatar3.jpg" alt="">
+              <div>
+                <a>Short sleeve shirt with lace</a>
+                <p>COP $105,000</p>
+              </div>
+            </li>
+          </ul>
+
+
+        </aside>
+        <section class="mdl-column2">
+          <article class="top-header">
+            <p class="p-header">Showing 1-12 of 289 results</p>
+            <div class="header-icons">
+              <button><i class="material-icons mdl-list__item-icon">view_module</i></button>
+              <button><i class="material-icons mdl-list__item-icon">view_list</i></button>
+            </div>
+          </article>
+
+          <section class="section-images">
+            <article class="article-image">
+              <div class="div-image"><img src="images/card1.jpg" alt=""></div>
+              <p>Dress</p>
+              <p>COP $ 200.000</p>
+              <i class="material-icons">add_shopping_cart</i>
+              <a href="" class="new-collection"><p>NEW COLLECTION</p></a>
+            </article>
+
+            <article class="article-image">
+              <div class="div-image"><img src="images/card2.jpg" alt=""></div>
+              <p>White Croptop</p>
+              <p>COP $ 200.000</p>
+              <i class="material-icons">add_shopping_cart</i>
+            </article>
+
+            <article class="article-image">
+              <div class="div-image"><img src="images/card3.jpg" alt=""></div>
+              <p>White Blouse</p>
+              <p>COP $ 200.000</p>
+              <i class="material-icons">add_shopping_cart</i>
+            </article>
+
+            <article class="article-image">
+              <div class="div-image"><img src="images/card4.jpg" alt=""></div>
+              <p>Black Blouse</p>
+              <p>COP $ 200.000</p>
+              <i class="material-icons">add_shopping_cart</i>
+            </article>
+
+            <article class="article-image">
+              <div class="div-image"><img src="images/card5.jpg" alt=""></div>
+              <p>Long sleeve blouse</p>
+              <p>COP $ 200.000</p>
+              <i class="material-icons">add_shopping_cart</i>
+            </article>
+
+            <article class="article-image">
+              <div class="div-image"><img src="images/card6.jpg" alt=""></div>
+              <p>Dark Blue Dress</p>
+              <p>COP $ 200.000</p>
+              <i class="material-icons">add_shopping_cart</i>
+            </article>
+          </section>
+
+        </section>
+      </section>
+      <footer>
+        <div class="div-footer"><p>© 2017 All Rights Reserved. Powered by Zuly Alcaraz</p></div>
+      </footer>
+    </div>
+  </main>
+</div>
+
+</body>
 </html>
