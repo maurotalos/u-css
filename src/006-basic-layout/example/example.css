@@ -1,5 +1,64 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+.trash {
+  color: black;
+}
+
+html {
+  background: white;
+  height: auto;
+}
+
+.page-content{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/*Without a wrapper div, with border and negative margin*/
+.lay-negative-margin, .lay-flex{
+  background-color: #ffd0c4;
+}
+
+.aside-float {
+  float: left;
+  margin-right: -200px;
+  position: relative;
+}
+
+.main-float{
+  border-left: 200px solid #8cd0d2;
+  padding: 20px;
+}
+
+
+.header-exercise,
+footer {
+  background: #D24F2E;
+  clear: left;
+  overflow: hidden;
+  zoom: 1;
+}
+
+nav li, nav p {
+  color: white;
+  display: inline;
+  line-height: 5px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+/*Using flex, flex-direction, and wrapper div*/
+.lay-flex .wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.aside-float, .aside-flex{
+  background-color: #8cd0d2;
+  width: 200px;
+}
+
+.main-flex{
+  padding: 20px;
 }
