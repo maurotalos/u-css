@@ -1,5 +1,185 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+.trash {
+  color: black;
 }
+
+.page-content {
+  overflow: auto;
+  padding: 0;
+  width: 100%;
+}
+
+/*top section*/
+.top-header {
+  display: flex;
+}
+
+.h4-header {
+  text-align: center;
+}
+
+.p-header {
+  width: 85%;
+}
+
+.header-icons button:first-child {
+  background-color: black;
+  border: none;
+}
+
+.header-icons button:last-child {
+  background-color: white;
+  border: none;
+}
+
+.header-icons button:first-child i {
+  color: white;
+}
+
+/*mid left section*/
+.h-border {
+  border-bottom: 1px solid #ebebeb;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.mdl-section {
+  color: #787879;
+  margin: 0 10%;
+}
+
+.mdl-column1 {
+  display: inline-block;
+  width: 20%;
+  min-width: 250px;
+}
+
+.li-images {
+  display: inline-flex;
+}
+
+.li-images > img {
+  float: left;
+  height: 100px;
+  padding-right: 10px;
+  width: 80px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.currency-ul li:not(:last-child) {
+  border-bottom: 1px solid #fbc2d4;
+}
+
+.currency-ul li {
+  background-color: #ebebeb;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+.currency-ul li:hover {
+  background-color: #fbc2d4;
+}
+
+.categories-ul li > a {
+  text-transform: uppercase;
+}
+
+.li-images div > p:after {
+  content: " total price";
+  font-size: 8px;
+}
+
+a {
+  color: #787879;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fbc2d4;
+}
+
+/*mid right section*/
+.mdl-column2 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  margin: 20px 0;
+}
+
+.section-images {
+  flex-wrap: wrap;
+  padding: 5% 2%;
+}
+
+.article-image {
+  position: relative;
+  display: inline-block;
+
+}
+
+.div-image {
+  box-sizing: content-box;
+  margin-right: 10px;
+  overflow: auto;
+  width: 250px;
+  height: 300px;
+}
+
+.div-image > img {
+  width: 250px;
+  height: 300px;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.div-image > img:hover {
+  opacity: 0.6;
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.new-collection p {
+  background-color: #fbc2d4;
+  color: white;
+  font-size: 80%;
+  height: 15%;
+  letter-spacing: 1px;
+  margin: 5% 10%;
+  padding: 1px 5px;
+  position: absolute;
+  top: 0;
+  vertical-align: middle;
+  width: 85px;
+}
+
+p {
+  margin: 0;
+
+}
+
+/*bottom section*/
+footer {
+  background-color: #787879;
+  color: white;
+  height: 100px;
+  left: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.div-footer {
+  position: absolute;
+  margin: 0 10%;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
