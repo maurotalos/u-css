@@ -1,0 +1,118 @@
+
+.page-content {
+  background: radial-gradient(80% 40%, rgba(245, 162, 117, 1), rgba(210, 79, 46, 1));
+  min-height: 100vh;
+  text-align: center;
+}
+
+/*top section*/
+.header {
+  color: white;
+  /*text-align: center;*/
+}
+
+.header h2 {
+  letter-spacing: 2px;
+  font-size: 3em;
+  padding: 30px;
+  text-shadow: 3px -2px 4px #000000;
+}
+
+.header h4 {
+  font-size: 2em;
+  letter-spacing: 1px;
+  text-shadow: -2px 2px 4px #000000;
+}
+
+.linear-gradient {
+  margin-top: 20px;
+  height: 3px;
+  background: linear-gradient(to right, #D24F2E, #f5a275, #f5a275, #D24F2E);
+}
+
+.example {
+  background: linear-gradient(to top, #f5a275, #D24F2E);
+}
+
+/*mid section*/
+.div-boxes {
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  height: 100%;
+  overflow: auto;
+  padding: 5% 0;
+  text-align: left;
+  width: 100%;
+}
+
+.div-box {
+  align-items: center;
+  background-color: #f5a275;
+  box-shadow: 3px 5px 5px 1px #D24F2E;
+  box-sizing: border-box;
+  border-radius: 100px;
+  display: inline-flex;
+  margin: 4%;
+  height: 150px;
+  max-width: 35%;
+  min-width: 400px;
+  opacity: 0.8;
+  padding: 0 20px;
+}
+
+.box {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.div-box:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.div-box img {
+  border-radius: 50%;
+  border: 3px solid white;
+  height: 100px;
+  width: 100px;
+}
+
+.div-box p {
+  overflow: hidden;
+  text-shadow: 1px -1px 0px #000000;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.div-box h2 {
+  padding-bottom: 10px;
+  text-shadow: 1px -1px 1px #000000;
+}
+
+.box {
+  padding: 10px;
+}
+
+@media (max-width: 900px) {
+  .div-boxes {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .div-box {
+    min-width: 90%;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .div-box img {
+    display: none;
+  }
+
+}
+
