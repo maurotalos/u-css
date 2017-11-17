@@ -1,4 +1,4 @@
-/* Practice Layout */
+/* fonts definition */
 
 @font-face {
   font-family: 'raleway-bold';
@@ -36,16 +36,45 @@
   font-style: normal;
 }
 
+/*general styles*/
+
 .page-content {
   background-color: rgb(212, 234, 222);
   font-family: 'raleway-thin';
-  font-size: 20px;
+  font-size: 1em;
   min-height: 100vh;
   min-width: 100%;
   overflow: auto;
   position: relative;
 }
 
+h3 {
+  font-size: 2em;
+}
+
+p, li {
+  font-size: 1em;
+  text-align: justify;
+}
+
+p {
+  padding: 2em 0;
+}
+
+li {
+  padding: 0.5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p::first-letter {
+  font-family: 'raleway-bold';
+  font-weight: bold;
+}
+
+/*gray section*/
 .sect-gray {
   background-color: rgba(0, 0, 0, 0.6);
   bottom: 0;
@@ -57,6 +86,17 @@
   z-index: 2;
 }
 
+/*blue section*/
+.title-sect-blue {
+  font-family: 'raleway-bold';
+  font-size: 3em;
+}
+
+.font {
+  font-size: 1.1em;
+  text-decoration: underline dotted;
+}
+
 .sect-blue {
   background-color: #76C4D1;
   color: white;
@@ -64,7 +104,7 @@
   margin: 5% 5%;
   min-height: 90%;
   min-width: 85%;
-  overflow: auto;
+  overflow: hidden;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -72,46 +112,8 @@
 
 .art-sect-blue > p {
   border-bottom: 1px solid #E72840;
-  padding: 20px 0 40px;
+  letter-spacing: 1px;
   max-height: 40%;
-}
-
-.sect-yellow {
-  background-color: #DFE180;
-  color: #7b7b7b;
-  margin: 5% 0;
-  min-height: 70%;
-  opacity: 1;
-  overflow: auto;
-  position: absolute;
-  right: 5%;
-  top: 10%;
-  width: 28%;
-  z-index: 4;
-}
-
-.sect-white {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
-  margin-bottom: 5%;
-  min-height: 50%;
-  overflow: auto;
-  position: absolute;
-  top: 45%;
-  width: 60%;
-}
-
-.art-sect-blue {
-  max-width: 50%;
-  margin-bottom: 30%;
-  position: relative;
-  padding: 5%;
-}
-
-.art-sect-white, .art-sect-yellow {
-  max-width: 90%;
-  position: absolute;
-  padding: 10%;
 }
 
 .search {
@@ -141,6 +143,32 @@
   width: 10px;
 }
 
+.art-sect-blue {
+  min-height: 50%;
+  max-width: 50%;
+  margin-bottom: 30%;
+  position: relative;
+  padding: 5%;
+}
+
+/*white section*/
+.sect-white {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  margin-bottom: 5%;
+  min-height: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 45%;
+  width: 60%;
+}
+
+.art-sect-white, .art-sect-yellow {
+  max-width: 90%;
+  position: absolute;
+  padding: 10%;
+}
+
 .icons {
   float: right;
 }
@@ -150,23 +178,20 @@
   padding-top: 10px;
 }
 
-.font {
-  font-size: 1.5em;
-  text-decoration: underline dotted;
-}
+/*yellow section*/
 
-p, li {
-  font-size: 12pt;
-  text-align: justify;
-}
-
-ul {
-  list-style-type: none;
-}
-
-p::first-letter {
-  font-family: 'raleway-bold';
-  font-weight: bold;
+.sect-yellow {
+  background-color: #DFE180;
+  color: #7b7b7b;
+  margin: 5% 0;
+  min-height: 70%;
+  opacity: 1;
+  overflow: auto;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 28%;
+  z-index: 4;
 }
 
 .ul-yellow li:before {
@@ -188,12 +213,14 @@ p::first-letter {
 @media (max-width: 640px) {
   .sect-blue, .sect-white, .art-sect-blue, .art-sect-white, .art-sect-yellow {
     line-height: 1.5;
+    max-width: 90%;
     margin: 0;
     padding: 5%;
     position: relative;
     width: 90%;
     z-index: 4;
   }
+
 
   .sect-yellow {
     margin: 5% 5%;
@@ -209,13 +236,20 @@ p::first-letter {
   }
 }
 
-@media (max-height: 740px) {
-  .sect-white, .art-sect-blue, .art-sect-white, .art-sect-yellow {
+@media (max-height: 800px) {
+  .art-sect-blue, .art-sect-white {
     position: relative;
     padding: 5%;
   }
 
+  .sect-white {
+    top:400px;
+    min-height: 30%;
+    overflow: auto;
+  }
+
   .sect-blue {
     overflow: auto;
+    height: auto;
   }
 }
