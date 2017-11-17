@@ -1,0 +1,143 @@
+/*general section*/
+.page-content {
+  background: url("../images/background.jpg");
+  background-position: 0 -50px;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  overflow: auto;
+}
+
+/*top section*/
+.header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.header h3 {
+  opacity: 0.6;
+
+}
+
+/*mid section*/
+form {
+  background-color: white;
+  box-sizing: border-box;
+  color: #9b9b9b;
+  display: block;
+  margin: 0 auto;
+  max-width: 40%;
+  overflow: hidden;
+}
+
+form input {
+  line-height: 3em;
+}
+
+form input, textarea {
+  background-color: #eee;
+  border: none;
+  width: 90%;
+  padding-left: 10px;
+}
+
+form input:focus, textarea:focus {
+  outline: 0;
+  border: 1px solid darkgray;
+}
+
+form button, input, p, textarea {
+  font-size: 1.1em;
+  margin: 2%;
+}
+
+form button {
+  background-color: #fbc2d4;
+  border: none;
+  color: white;
+  line-height: 3.3em;
+  width: 30%;
+}
+
+form button:hover {
+  background-color: white;
+  border: solid 1px #fbc2d4;
+  color: #fbc2d4;
+  cursor: pointer;
+}
+
+.form-section {
+  background-color: white;
+  height: 30%;
+  width: 100%;
+}
+
+/*bottom section*/
+footer ul {
+  list-style-type: none;
+  padding-bottom: 50px;
+  width: 20%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.uls-footer {
+  display: inline-flex;
+  height: 100%;
+  margin: auto;
+  width: 60%;
+
+}
+
+.li-tittle {
+  border-bottom: solid 1px white;
+  padding-bottom: 20px;
+  letter-spacing: 0.5em;
+}
+
+li {
+  padding: 10px 10px 0 0;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  color: white;
+  background-color: #fbc2d4;
+  width: 100%;
+  height: 100%;
+  padding: 2% 0;
+
+}
+
+/*responsive design*/
+@media (max-width: 700px) {
+
+  form {
+    max-width: 80%;
+  }
+
+  footer {
+    display: inherit;
+  }
+
+  .uls-footer {
+    display: inherit;
+  }
+
+}
+
