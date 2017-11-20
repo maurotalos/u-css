@@ -52,7 +52,7 @@ h1, h3 {
   background: #dddddd;
 }
 
-.tabs > .tab > label:hover {
+.tabs > .tab:hover {
   background-color: #cccccc;
 }
 
@@ -62,7 +62,7 @@ h1, h3 {
 
 .tabs .tab > label {
   display: block;
-  padding: 25px;
+  padding: 20px;
   cursor: pointer;
   position: relative;
   color: gray;
@@ -73,7 +73,7 @@ h1, h3 {
   overflow: auto;
   padding: 25px;
   position: absolute;
-  top: 80px;
+  top: 70px;
   left: 0;
   color: gray;
   opacity: 0;
@@ -84,7 +84,7 @@ h1, h3 {
   top: 0;
   background: white;
   color: black;
-  border: 2px solid #2aa1c0;
+  border: 3px solid #2aa1c0;
 }
 
 .tabs > .tab > [id^="tab"]:checked ~ [id^="tab-content"] {
