@@ -1,0 +1,137 @@
+/*general styles*/
+.page-content {
+  height: 100vh;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+.container {
+  overflow: hidden;
+  min-height: 600px;
+  width: 640px;
+  margin: 0 5%;
+  -webkit-box-shadow: 1px 8px 6px -6px black;
+  -moz-box-shadow: 1px 8px 6px -6px black;
+  box-shadow: 0 48px 80px -32px #b2b2b2;
+}
+
+h1, h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.cont-checks {
+  box-shadow: 0 1px 1px 0 #b2b2b2;
+  width: 200px;
+  height: 60%;
+  padding: 20px;
+}
+
+.cont-checks label {
+  display: block;
+  line-height: 2em;
+}
+
+/*.cont-checks input:focus {*/
+/*box-shadow: 0 1px 1px 0 #b2b2b2;*/
+/*background-color: #b2b2b2;*/
+/*color: #b2b2b2;*/
+/*}*/
+
+/*tabs*/
+
+.tabs {
+  position: relative;
+  background: linear-gradient(to right, #dddddd, #eeeeee);
+  display: inline-flex;
+  width: 100%;
+}
+
+.tabs .tab {
+  background: #dddddd;
+}
+
+.tabs > .tab > label:hover {
+  background-color: #cccccc;
+}
+
+.tabs .tab > input[type="radio"] {
+  display: none;
+}
+
+.tabs .tab > label {
+  display: block;
+  padding: 25px;
+  cursor: pointer;
+  position: relative;
+  color: gray;
+  font-weight: bold;
+}
+
+.tabs .content {
+  overflow: auto;
+  padding: 25px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  color: gray;
+  opacity: 0;
+  transition: opacity 400ms ease-out;
+}
+
+.tabs > .tab > [id^="tab"]:checked + label {
+  top: 0;
+  background: white;
+  color: black;
+  border: 2px solid #2aa1c0;
+}
+
+.tabs > .tab > [id^="tab"]:checked ~ [id^="tab-content"] {
+  opacity: 1;
+  transition: opacity 400ms ease-out;
+}
+
+/*list-cards*/
+.list-cards img, .list-cards div, .list-cards label {
+  display: inline-block;
+}
+
+.list-cards label {
+  float: right;
+}
+
+.list-cards img {
+  width: 50px;
+  height: auto;
+}
+
+.list-cards li:hover {
+  background-color: #eeeeee;
+}
+
+.list-cards ul {
+  width: 90%;
+}
+
+.list-cards {
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+
+
+  .container {
+    overflow: auto;
+    margin: 0;
+    min-height: 600px;
+    width: 95%;
+  }
+
+  .list-cards ul {
+    width: 100%;
+  }
+
+}
+
+
